@@ -1,0 +1,30 @@
+html,body{ height:100%; }
+
+body{ background: url('../img/slide-1.jpg')no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+nav{ background:rgba(1,0,0,0.8);padding-top: 10px; padding-bottom:10px;}
+
+.header{ width:100%; padding: 20px; background: rgba(0, 0, 0, 0.5); }
+
+.langs li, .social li, .menu li{ display: inline; list-style: none; }
+.langs li a, .social li a{ color: white; }
+
+
+.langs{ float: left;}
+.social{ float: right; }
+
+.menu{ text-align: right; margin-right:50px; }
+.menu li{ margin-left:30px;}
+.menu li.current{ background-color: lightblue; padding:10px; }
+.menu li a{ color:grey;}
+.menu li.current a{ color: black; font-weight: bold;}
+
+.info{ background-color:rgba(255, 255, 255, 0.8); }
+
+.footer{ width:100%;padding:20px; background-color:black;}
+
