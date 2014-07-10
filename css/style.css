@@ -7,7 +7,7 @@ body{ background: url('../img/slide-1.jpg')no-repeat center center fixed;
 	  background-size: cover;
 }
 
-nav{ background:rgba(1,0,0,0.8);padding-top: 10px; padding-bottom:10px;}
+nav{ background:rgba(1,0,0,0.8);}
 
 .header{ width:100%; padding: 20px; background: rgba(0, 0, 0, 0.5); }
 
@@ -18,8 +18,9 @@ nav{ background:rgba(1,0,0,0.8);padding-top: 10px; padding-bottom:10px;}
 .langs{ float: left;}
 .social{ float: right; }
 
-.menu{ text-align: right; margin-right:50px; }
-.menu li{ margin-left:30px;}
+.menu{ text-align: right; margin-right:50px; padding-top: 10px; padding-bottom:10px; }
+.menu li{ margin-left:30px; padding:10px;}
+.menu li:hover{ background-color: lightblue; }
 .menu li.current{ background-color: lightblue; padding:10px; }
 .menu li a{ color:grey;}
 .menu li.current a{ color: black; font-weight: bold;}
