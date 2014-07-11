@@ -1,5 +1,7 @@
 html,body{ height:100%; }
 
+h1{ display:inline-block; color:white; float:left; margin: 0; margin-left:20px; }
+
 body{ background: url('../img/slide-1.jpg')no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
@@ -18,7 +20,7 @@ nav{ background:rgba(1,0,0,0.8);}
 .langs{ float: left;}
 .social{ float: right; }
 
-.menu{ text-align: right; margin-right:50px; padding-top: 10px; padding-bottom:10px; }
+.menu{ text-align: right; margin:0; margin-right:50px; padding-top: 10px; padding-bottom:10px; }
 .menu li{ margin-left:30px; padding:10px;}
 .menu li:hover{ background-color: lightblue; }
 .menu li.current{ background-color: lightblue; padding:10px; }
@@ -26,7 +28,7 @@ nav{ background:rgba(1,0,0,0.8);}
 .menu li.current a{ color: black; font-weight: bold;}
 
 
-.transiciones{ padding:10px; background-color:rgba(0,0,0,0.9); }
+.transiciones{ padding:10px; background-color:rgba(0,0,0,0.7); }
 .sector-t img{ position: relative; background-color:black; width:100%; height:200px; border-radius:10px 10px 20px 20px;}
 .leyenda-sector{ background: #cd96c9;
 	position: absolute;
@@ -43,5 +45,7 @@ nav{ background:rgba(1,0,0,0.8);}
 
 .info{ background-color:rgba(255, 255, 255, 0.8); }
 
-.footer{ width:100%;padding:20px; background-color:rgba(0,0,0,0.9);}
+.footer{ width:100%;padding:20px; background-color:black;}
+
+ul.sponsor li{ display:inline; list-style: none; }
 
