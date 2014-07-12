@@ -1,6 +1,6 @@
 html,body{ height:100%; }
 
-h1{ display:inline-block; color:white; float:left; margin: 0; margin-left:20px; position:absolute; }
+h1{ font-family: 'Lobster', cursive; display:inline-block; color:white; float:left; margin: 0; margin-left:20px; position:absolute; }
 
 body{ background: url('../img/slide-1.jpg')no-repeat center center fixed; 
 	  -webkit-background-size: cover;
