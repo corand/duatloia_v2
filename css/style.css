@@ -1,6 +1,6 @@
 html,body{ height:100%; }
 
-h1{ display:inline-block; color:white; float:left; margin: 0; margin-left:20px; }
+h1{ display:inline-block; color:white; float:left; margin: 0; margin-left:20px; position:absolute; }
 
 body{ background: url('../img/slide-1.jpg')no-repeat center center fixed; 
 	  -webkit-background-size: cover;
@@ -22,7 +22,8 @@ nav{ background:rgba(1,0,0,0.8);}
 
 .menu{ text-align: right; margin:0; margin-right:50px; padding-top: 10px; padding-bottom:10px; }
 .menu li{ margin-left:30px; padding:10px;}
-.menu li:hover{ background-color: lightblue; }
+.menu li:hover{ background-color: lightblue; text-decoration: none; }
+.menu a:hover{ text-decoration: none;}
 .menu li.current{ background-color: lightblue; padding:10px; }
 .menu li a{ color:grey;}
 .menu li.current a{ color: black; font-weight: bold;}
