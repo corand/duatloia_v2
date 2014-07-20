@@ -4,15 +4,17 @@
 		<title>Oñatiko Duatloia</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Oñatiko Duatloiaren web orri ofiziala" />
+		<meta author="Andoni Correas" />
 		<link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/video-js.css" >
 	</head>
 	<body>
-
+	<div id="bg"></div>
 		<div class="header clearfix">
 			<ul class="langs">
 		        <li><b><a href="#">Euskara</a></b> | </li>
@@ -43,9 +45,16 @@
        			<div class="col-md-14 info">
        				<p>2014ko Martxoaren 15ean</p>
        				<p>Arratsaldeko 15:30</p>
-       				<video>
-
-			       	</video>
+       				<center>
+       				<video id="videoduatlon" class="video-js vjs-default-skin vjs-big-play-centered"
+      controls preload="auto" width="640" height="500"
+      poster="video/poster_video.png"
+      data-setup='{"example_option":true}'>
+        <source src="video/duatloia.webm" type='video/webm; codecs="vp8, vorbis"' />
+        <source src="video/duatloia.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+      Video tag not supported. Download the video <a href="movie.webm">here</a>.
+    				<video>
+    				</center>
        			</div>
        			<div class="col-md-1"></div>
        		</div>
@@ -100,6 +109,17 @@
 	       -->
 		</div>
        <script src="js/lib/jquery.js"></script>
+       <script src="js/lib/video.js"></script>
+       <script>
+
+		setTimeout(function(){
+			$("body").css({'background-image': 'url(img/slide-2.jpg)'}).animate({opacity:1});
+		},5000);
+       	
+
+
+       	
+       </script>
 
 	</body>
 
