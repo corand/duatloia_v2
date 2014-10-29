@@ -11,7 +11,7 @@ body{ background-color:black;}
 	  -o-background-size: cover;
 	  background-size: cover;  }
 
-.header{ width:100%; padding: 20px; background: rgba(30,144,255, 0.9); }
+.header{ width:100%; padding: 10px; background: rgba(30,144,255, 0.9); }
 
 .langs li, .social li, .menu li{ display: inline; list-style: none; }
 .langs li a, .social li a{ color: white; }
