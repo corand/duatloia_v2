@@ -7,11 +7,10 @@
 		<meta author="Andoni Correas" />
 		<link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/video-js.css" >
 	</head>
 	<body>
 	<div id="bg"></div>
@@ -41,34 +40,31 @@
 
        <div class="container">
        		<div class="row">
-       			<div class="col-md-1"></div>
-       			<div class="col-md-14 info">
+				<div class="col-md-14">
+					<div class="slider-container">
+						<ul id="slider">
+							<li><img src="img/iragarkiak/mettacarbon.png" /></li>
+			       			<li><img src="img/iragarkiak/spiuk.png" /></li>
+			       			<li><img src="img/iragarkiak/Intersport.jpg" /></li>
+			       			<li><img src="img/iragarkiak/dvasco.png" /></li>
+			       			<li><img src="img/iragarkiak/3bat.png" /></li>
+						</ul>
+					</div><!-- /slider -->
+				</div>
+       		</div>
+       		<div class="row">
+       			<div class="col-md-offset-1 col-md-14 info">
        				<div class="row">
-       					<div class="col-md-7">
+       					<div class="col-md-8">
        						<p>2014ko Martxoaren 15ean</p>
        						<p>Arratsaldeko 15:30</p>
-
        					</div>
-       					<div class="col-md-7">
+       					<div class="col-md-8">
        						<a class="twitter-timeline" href="https://twitter.com/hashtag/oinati" data-widget-id="527535784572628992">Tweets sobre #oinati</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
        					</div>
        				</div>
-
-       		
-       				
-       				<center>
-       				<video id="videoduatlon" class="video-js vjs-default-skin vjs-big-play-centered"
-      controls preload="auto" width="100%" height="500"
-      poster="video/poster_video.png"
-      data-setup='{"example_option":true}'>
-        <source src="video/duatloia.webm" type='video/webm; codecs="vp8, vorbis"' />
-        <source src="video/duatloia.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-      Video tag not supported. Download the video <a href="movie.webm">here</a>.
-    				<video>
-    				</center>
        			</div>
-       			<div class="col-md-1"></div>
        		</div>
        </div>
 
@@ -121,17 +117,30 @@
 	       -->
 		</div>
        <script src="js/lib/jquery.js"></script>
-       <script src="js/lib/video.js"></script>
+       <script src="js/lib/jquery.bxSlider.js"></script>
+		<script type="text/javascript">
+  		$(document).ready(function(){
+     		$('#slider').bxSlider({
+	    		ticker: true,
+	    		tickerSpeed: 5000,
+				tickerHover: true
+  			});
+  		});
+		</script>
        <script>
-
-		setTimeout(function(){
-			$('#bg')
+       background();
+		function background(){
+			setTimeout(function(){
+				$('#bg')
 			    .animate({opacity: 0}, 'slow', function() {
 			        $(this)
 			            .css({'background-image': 'url(img/slide-2.jpg)'})
 			            .animate({opacity: 1});
 			    });
-		},5000);
+			    background();
+			},30000);
+		}
+		
        	
        </script>
 
