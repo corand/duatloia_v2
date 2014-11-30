@@ -127,27 +127,7 @@
 	       -->
 		</div>
        <script src="js/lib/jquery.js"></script>
-       <script src="js/lib/moment.min.js"></script>
-	   <script src="js/lib/countdown.min.js"></script>
-	   <script src="js/lib/moment-countdown.min.js"></script>
-       <script>
-       background();
-       	
-		function background(){
-			var argazkiak = ['img/slide-2.jpg','img/slide-1.jpg','img/slide-3.jpg'];
-			var oingua = argazkiak[Math.floor(Math.random()*argazkiak.length)];
-			setTimeout(function(){
-				$('#bg')
-			    .animate({opacity: 0}, 'slow', function() {
-			        $(this)
-			            .css({'background-image': 'url('+oingua+')'})
-			            .animate({opacity: 1});
-			    });
-			    background();
-			},15000);
-		}
-       </script>
-
+       <script src="js/ott.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
