@@ -2,7 +2,7 @@ html,body{ height:100%; }
 
 h1{ font-family: 'Lobster', cursive; display:inline-block; color:black; float:left; margin: 0; margin-left:20px; position:absolute; }
 
-nav{ background:rgba(173,255,47,0.9);}
+nav{ background:rgba(30,144,255, 1)}
 
 body{ background-color:black;}
 
@@ -32,11 +32,11 @@ body{ background-color:black;}
 
 .menu{ text-align: right; margin:0; margin-right:50px; padding-top: 10px; padding-bottom:10px; }
 .menu li{ margin-left:30px; padding:10px;}
-.menu li:hover{ background-color: rgb(30,144,255); text-decoration: none; color:white; }
+.menu li:hover{ background-color: rgb(173,255,47); text-decoration: none; color:black; }
 .menu a:hover{ text-decoration: none; color: white;}
-.menu li.current{ background-color: rgb(30,144,255); padding:10px; }
+.menu li.current{ background-color: rgb(173,255,47); padding:10px; color:black; }
 .menu a{ color:black; font-family: 'Bubblegum Sans', cursive; font-size: 1.2em;}
-.menu li.current a{ color: white; font-weight: bold;}
+.menu li.current a{ color: black; font-weight: bold;}
 
 
 .transiciones{ padding:10px; background-color:rgba(30,144,255,0.7); }
