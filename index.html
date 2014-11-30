@@ -26,6 +26,12 @@
 		        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
 	      	</ul>
 		</div>
+		<div class="jumbotron">
+		  <div class="container">
+		    <h1>Oñatiko Duatloia</h1>
+		  </div>
+		</div>
+		<!--
 		<nav>
 			<h1><img src="img/logo.png">Oñatiko Duatloia</h1>
 			<ul class="menu">
@@ -37,27 +43,15 @@
 				<a href="#"><li>Sariak</li></a>
 			</ul>
        </nav>
+       -->
 
        <div class="container">
        		<div class="row">
-				<div class="col-md-14">
-					<div class="slider-container">
-						<ul id="slider">
-							<li><img src="img/iragarkiak/mettacarbon.png" /></li>
-			       			<li><img src="img/iragarkiak/spiuk.png" /></li>
-			       			<li><img src="img/iragarkiak/Intersport.jpg" /></li>
-			       			<li><img src="img/iragarkiak/dvasco.png" /></li>
-			       			<li><img src="img/iragarkiak/3bat.png" /></li>
-						</ul>
-					</div><!-- /slider -->
-				</div>
-       		</div>
-       		<div class="row">
-       			<div class="col-md-offset-1 col-md-14 info">
+       			<div class="col-md-offset-2 col-md-12 info">
        				<div class="row">
        					<div class="col-md-8">
-       						<p>2014ko Martxoaren 15ean</p>
-       						<p>Arratsaldeko 15:30</p>
+       					<p class="data">2015eko Martxoaren 15ean</p>
+       					<iframe width="420" height="315" src="//www.youtube.com/embed/arZ8eIg5hHM" frameborder="0" allowfullscreen></iframe>
        					</div>
        					<div class="col-md-8">
        						<a class="twitter-timeline" href="https://twitter.com/hashtag/oinati" data-widget-id="527535784572628992">Tweets sobre #oinati</a>
@@ -98,15 +92,10 @@
 		   		<div class="col-md-2"></div>
 		   	</div>
 		   	<div class="row footer">
-		   		<div class="col-md-1"></div>
-	       		<ul class="sponsor col-md-14">
-	       			<li><img src="img/iragarkiak/mettacarbon.png" /></li>
-	       			<li><img src="img/iragarkiak/spiuk.png" /></li>
-	       			<li><img src="img/iragarkiak/Intersport.jpg" /></li>
-	       			<li><img src="img/iragarkiak/dvasco.png" /></li>
-	       			<li><img src="img/iragarkiak/3bat.png" /></li>
-	       		</ul>
-	       		<div class="col-md-1"></div>
+		   	<center>
+				&copy; Oñatiko Triatloi Taldea
+		   	</center>
+		   		
 	       </div>
 	       <!--
 	       <div class="row legend">
@@ -117,31 +106,25 @@
 	       -->
 		</div>
        <script src="js/lib/jquery.js"></script>
-       <script src="js/lib/jquery.bxSlider.js"></script>
-		<script type="text/javascript">
-  		$(document).ready(function(){
-     		$('#slider').bxSlider({
-	    		ticker: true,
-	    		tickerSpeed: 5000,
-				tickerHover: true
-  			});
-  		});
-		</script>
+       <script src="js/lib/moment.min.js"></script>
+	   <script src="js/lib/countdown.min.js"></script>
+	   <script src="js/lib/moment-countdown.min.js"></script>
        <script>
        background();
+       	
 		function background(){
+			var argazkiak = ['img/slide-2.jpg','img/slide-1.jpg','img/slide-3.jpg'];
+			var oingua = argazkiak[Math.floor(Math.random()*argazkiak.length)];
 			setTimeout(function(){
 				$('#bg')
 			    .animate({opacity: 0}, 'slow', function() {
 			        $(this)
-			            .css({'background-image': 'url(img/slide-2.jpg)'})
+			            .css({'background-image': 'url('+oingua+')'})
 			            .animate({opacity: 1});
 			    });
 			    background();
-			},30000);
+			},15000);
 		}
-		
-       	
        </script>
 
 	</body>

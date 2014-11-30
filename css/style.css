@@ -6,6 +6,8 @@ nav{ background:rgba(173,255,47,0.9);}
 
 body{ background-color:black;}
 
+.data{color:darkblue;}
+
 #bg{ z-index:-1; position:fixed; width:100%; height:100%; top:0; left:0; background: url('../img/slide-1.jpg')no-repeat center center fixed;-webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -15,6 +17,8 @@ body{ background-color:black;}
 
 .langs li, .social li, .menu li{ display: inline; list-style: none; }
 .langs li a, .social li a{ color: white; }
+
+.jumbotron{ background-color:rgba(173,255,47,0.9); padding-top:48px; padding-bottom:72px; margin:0;}
 
 
 .langs{ float: left;}
@@ -33,7 +37,7 @@ body{ background-color:black;}
 
 .transiciones{ padding:10px; background-color:rgba(30,144,255,0.7); }
 .sector-t img{ position: relative; background-color:black; width:100%; height:200px; border-radius:10px 10px 20px 20px;}
-.leyenda-sector{ background: rgba(173,255,47,0.9);
+.leyenda-sector{ background: rgb(173,255,47);
 	position: absolute;
 	display: block;
 	bottom: 0;
@@ -46,9 +50,9 @@ body{ background-color:black;}
 	text-align: center;
 	border-radius: 0 0 13px 13px;}
 
-.info{ background-color:rgba(255, 255, 255, 0.8); padding-top:30px; font-family: 'Changa One', cursive; font-size:3em; }
+.info{ background-color:rgba(255, 255, 255, 0.9); padding-top:30px; font-family: 'Changa One', cursive; font-size:3em; }
 
-.footer{ background-color:rgba(0,0,0,0.9);}
+.footer{ background-color:rgba(0,0,0,0.9); padding:20px;}
 
 .legend{ background-color: black; text-align: center;}
 
